@@ -1,0 +1,26 @@
+{
+	"Snippet_Create": {
+		"prefix": "Snippet_Create",
+		"description": "Snippet to create other Snippets!",
+		"body": [
+			"\"${1:Name}\": {",
+			"\t\"prefix\": \"${1:Name}\",",
+			"\t\"body\": [",
+			"\t\t\"$0\",",
+			"\t]",
+			"}"
+		]
+	},
+	"vsCode_settings.json": {
+		"prefix": "vsCode_settings.json",
+		"description": "Create a settings.json using all the project specific conventions I like people to follow.",
+		"body": [
+			"{",
+			"\t\"editor.tabSize\": 2,",
+			"\t\"files.trimTrailingWhitespace\": true,",
+			"\t\"editor.formatOnSave\": true,",
+			"\t\"files.eol\": \"\\n\"",
+			"}"
+		]
+	}
+}
