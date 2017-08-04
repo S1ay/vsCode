@@ -11,16 +11,35 @@
 			"}"
 		]
 	},
-	"vsCode_settings.json": {
-		"prefix": "vsCode_settings.json",
+	"vsCode_proj_settings.json": {
+		"prefix": "vsCode_proj_settings.json",
 		"description": "Create a settings.json using all the project specific conventions I like people to follow.",
 		"body": [
 			"{",
 			"\t\"editor.tabSize\": 2,",
 			"\t\"files.trimTrailingWhitespace\": true,",
-			"\t\"editor.formatOnSave\": true,",
+      "\t\"editor.formatOnSave\": true,",
+      "\t\"editor.detectIndentation\": false,",
 			"\t\"files.eol\": \"\\n\"",
 			"}"
 		]
-	}
+  },
+  "vsCode_user_settings.json": {
+    "prefix": "vsCode_user_settings.json",
+    "description": "My personal global settings.",
+    "body": [
+      "\t\"editor.cursorStyle\": \"line-thin\",",
+      "\t\"editor.cursorBlinking\": \"solid\",",
+      "\t\"editor.renderWhitespace\": \"all\",",
+      "\t\"editor.renderControlCharacters\": true,",
+      "\t\"files.associations\": {",
+      "\t\t\"*.template\": \"json\"",
+      "\t},",
+      "\t\"window.restoreFullscreen\": true,",
+      "\t\"git.enableSmartCommit\": true,",
+      "\t\"editor.tabSize\": 2,",
+      "\t\"editor.detectIndentation\": false,",
+      "\t\"editor.snippetSuggestions\": \"top\""
+    ]
+  }
 }

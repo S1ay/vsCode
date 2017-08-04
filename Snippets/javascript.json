@@ -1,27 +1,47 @@
 {
-	"evented": {
-		"prefix": "evented",
-		"body": [
-			"const events = require('events');",
-			"const util = require('utils');",
-			"",
-			"const ${1:Name} = () => {",
-			"  const self = this;",
-			"  events.EventEmitter.call(self);",
-			"  $0",
-			"};",
-			"",
-			"util.inherits(${1:Name}, events.EventEmitter);",
-			"module.exports = new ${1:Name}();",
-			""
-		]
-	},
-	"mocha_Describe": {
-		"prefix": "mocha_Describe",
-		"body": [
-			"describe('${1:What}', () => {",
-			"  $0",
-			"});"
-		]
-	}
+  /*
+  Node.js
+  */
+  "evented": {
+    "prefix": "evented",
+    "body": [
+      "const events = require('events');",
+      "const util = require('utils');",
+      "",
+      "const ${1:Name} = () => {",
+      "  const self = this;",
+      "  events.EventEmitter.call(self);",
+      "  $0",
+      "};",
+      "",
+      "util.inherits(${1:Name}, events.EventEmitter);",
+      "module.exports = new ${1:Name}();",
+      ""
+    ]
+  },
+  /*
+  END Node.js
+  */
+  /*
+  Mocha testing snippets.
+  */
+  "describe_mocha": {
+    "prefix": "describe_mocha",
+    "body": [
+      "describe('${1:What}', () => {",
+      "  $0",
+      "});"
+    ]
+  },
+  "it_mocha": {
+    "prefix": "it_mocha",
+    "body": [
+      "it('${1:Will Do}', (${2:done}) => {",
+      "  $0",
+      "});"
+    ]
+  }
+  /*
+  END Mocha
+  */
 }
