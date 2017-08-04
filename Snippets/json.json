@@ -41,5 +41,19 @@
       "\t\"editor.detectIndentation\": false,",
       "\t\"editor.snippetSuggestions\": \"top\""
     ]
+  },
+  "eslint_Config": {
+    "prefix": "eslint_Config",
+    "body": [
+      "{",
+      "\t\"extends\": \"airbnb-base\",",
+      "\t\"rules\": {",
+      "\t\t\"max-len\": 0",
+      "\t},",
+      "\t\"env\": {",
+      "\t\t\"mocha\": true",
+      "\t}",
+      "}"
+    ]
   }
 }
